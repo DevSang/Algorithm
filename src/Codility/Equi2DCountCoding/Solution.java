@@ -1,4 +1,4 @@
-package Equi2DCountCoding;
+package Codility.Equi2DCountCoding;
 
 public class Solution {
 
