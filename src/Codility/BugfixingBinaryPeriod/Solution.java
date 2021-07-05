@@ -11,7 +11,7 @@ class Solution {
             n /= 2;
             l++;
         }
-        for (p = 1; p < 1 + l; ++p) {
+        for (p = 1; p < 1 + l / 2; ++p) {
             int i;
             boolean ok = true;
             for (i = 0; i < l - p; ++i) {
@@ -28,3 +28,4 @@ class Solution {
     }
 }
 
+///https://stackoverflow.com/questions/57143272/fix-the-solution-of-binary-period
