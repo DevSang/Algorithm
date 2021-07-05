@@ -1,4 +1,4 @@
-package Codility.LargestevenNumsSum;
+package Codility.LargestEvenSum;
 
 import java.util.ArrayList;
 import java.util.Collections;
