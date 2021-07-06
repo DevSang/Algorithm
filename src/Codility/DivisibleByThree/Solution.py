@@ -1,29 +1,18 @@
 import sys
 
-def solution(numbers):
+nums = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+def solution(S):
   ans = 0
-  total = sum(map(int, numbers))
-  print(total)
-
-  for num in numbers:
-    remain = (total - int(num)) % 3
-    if remain == 0:
-      ans += 4
-    else:
-      ans += 3
-    if (remain + int(num)) % 3 == 0:
-      ans -= 1
-    if (total - int(num) == 0):
-      ans -= 1
-  if (total % 3 == 0):
+  s_list = [c for c in S]
+  sum_s = sum([int(s) for s in S])
+  if sum_s % 3 == 0:
     ans += 1
-  print(ans)
+  for i, s in enumerate(s_list):
+    for num in nums:
+      if num == s:
+        continue
+      diff = int(num) - int(s_list[i])
+      if (sum_s + diff) % 3 == 0:
+        # print(s_list)
+        ans += 1
   return ans
-
-
-def main(numbers):
-  solution(numbers)
-
-
-if __name__ == '__main__':
-  main(sys.argv[1])
