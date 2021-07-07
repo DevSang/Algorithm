@@ -11,8 +11,8 @@ class SolutionTest {
 
     static List<int[]> provider() {
         List<int[]> list = new ArrayList<>();
-//    list.add(new int[]{});
-//    list.add(new int[]{1, 2});
+        list.add(new int[]{});
+        list.add(new int[]{1, 2});
         list.add(new int[]{1, 4, 2, 3, 3, 5, 6, 7, 7, 9});
         list.add(new int[]{1, 2, 4, 7, 6, 6, 6, 2, 0});
         return list;
