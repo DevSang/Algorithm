@@ -12,7 +12,7 @@ for cnt in range(len(A)):
   tmp = A.copy()
   if cnt + K > len(A):
     break
-  del tmp[cnt:cnt+K]
-  solution_arr.append(max(tmp)-min(tmp))
+  del tmp[cnt:cnt + K]
+  solution_arr.append(max(tmp) - min(tmp))
 
 print(min(solution_arr))

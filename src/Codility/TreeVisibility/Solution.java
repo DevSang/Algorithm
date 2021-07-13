@@ -16,7 +16,7 @@ public class Solution {
         if (T == null) {
             return 0;
         }
-        
+
         dfs(T, -100001);
         return answer;
     }

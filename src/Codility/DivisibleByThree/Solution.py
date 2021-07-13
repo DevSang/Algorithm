@@ -1,6 +1,8 @@
 import sys
 
 nums = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+
+
 def solution(S):
   ans = 0
   s_list = [c for c in S]
